@@ -28,7 +28,7 @@ export = function less({ filename = '[name].css', allChunks = false, sourceMap =
       module: {
         loaders: get(this, 'module.loaders', []).concat([{
           test: /\.less$/i,
-          loaders: extractCss ? extractText.extract(...loaders) : loaders
+          loaders: extractCss ? extractText.extract(...loaders.slice(1)) : loaders
         }])
       }
     } as WebpackConfig
