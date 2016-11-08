@@ -14,3 +14,4 @@ export = function less({ filename = '[name].css', allChunks = false, sourceMap =
   additionalLoaders.push(`less${sourceMap ? '?sourceMap' : ''}`)
   return easyCss({ test: /\.less$/i, filename, allChunks, extractText, resolveRelativeUrl, sourceMap, additionalLoaders })
 }
+
