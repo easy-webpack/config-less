@@ -11,7 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
  * resolveRelativeUrl: boolean or object with parameters
  */
 export = function less({ filename = '[name].css', allChunks = false, sourceMap = false, extractText = undefined, resolveRelativeUrl = undefined, additionalLoaders = [] } = {}) {
-  additionalLoaders.push(`less${sourceMap ? '?sourceMap' : ''}`)
+  additionalLoaders.push(`less-loader${sourceMap ? '?sourceMap' : ''}`)
   return easyCss({ test: /\.less$/i, filename, allChunks, extractText, resolveRelativeUrl, sourceMap, additionalLoaders })
 }
 
