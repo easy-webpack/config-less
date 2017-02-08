@@ -1,4 +1,6 @@
 # @easy-webpack/config-less
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/easy-webpack/config-less.svg)](https://greenkeeper.io/)
 This config allows you to bundle [Less] in your webpack bundle using [less-loader].
 
 This use [config-css](https://github.com/easy-webpack/config-css) to achieve loading of CSS module. It is highly recommended to read the documentation of config-css before using this module.
